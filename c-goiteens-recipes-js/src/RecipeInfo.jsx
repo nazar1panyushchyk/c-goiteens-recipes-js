@@ -1,19 +1,10 @@
 import PropTypes from "prop-types";
 
 export default function RecipeInfo({ icon, text }) {
-  return (
-    <>
-      <div>
-        <img src={icon} alt="icon" />
-        <p>
-          {text}, {icon}
-        </p>
-      </div>
-    </>
-  );
+  return <p>{text} {icon}</p>;
 }
 
 RecipeInfo.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.element.isRequired,
   icon: PropTypes.string.isRequired,
 };
