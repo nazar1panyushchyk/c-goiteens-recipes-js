@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 export default function RecipeInfo({ icon, text }) {
-  return <p>{text} {icon}</p>;
+  return <p>{icon} {text}</p>;
 }
 
 RecipeInfo.propTypes = {
